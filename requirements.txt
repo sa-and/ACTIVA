@@ -1,0 +1,30 @@
+# Versions of the environment that trained the paper's checkpoints and produced its results.
+# Checkpoints are dill-pickled Flax modules, so keep flax and dill at these versions to load them.
+
+# Core JAX stack (install jax itself first, see README)
+jax==0.4.33
+jaxlib==0.4.33
+flax==0.8.5
+optax==0.2.3
+distrax==0.1.5
+chex==0.1.86
+tensorflow-probability==0.24.0
+jax-dataloader==0.1.2
+
+# Data and numerics
+numpy==2.1.0
+scipy==1.14.1
+torch==2.4.1        # used by generate_data.py (random structural functions)
+networkx==3.3
+
+# SCM generation
+causal-playground==0.1.2
+
+# Training utilities
+tyro==0.8.8
+tqdm==4.66.5
+dill==0.3.8
+wandb==0.17.7
+
+# Plotting
+matplotlib==3.9.2
